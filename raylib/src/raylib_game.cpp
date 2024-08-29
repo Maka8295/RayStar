@@ -13,23 +13,37 @@
 ********************************************************************************************/
 
 #include "raylib.h"
-#include <stdio.h>
+#include <iostream>
+#include <queue>
+#include <vector>
+#include <memory>
 
 static const int Width = 800;
 static const int Height = 800;
 
-typedef struct {
-  int row;
-  int col;
-  int x;
-  int y;  
-  Color color;
-  struct Node *neighbors[4];
 
-} Node
+class Square {
+  public:
+    int row;
+    int col;
+    int x;
+    int y;
+    //colour?
+    //neighbors
+    int width;
+    int total_rows;
 
-int nodeWidth;
-int totalRows;
+
+
+}
+
+// FUNCTIONS
+
+int h(int p1, int p2)
+{
+  
+}
+
 
 static void UpdateDrawFrame(void);          // Update and draw one frame
 
